@@ -60,8 +60,13 @@ class Owner
   def sell_pets
     cats.each {|animal|  animal.mood = "nervous"}
     dogs.each {|animal|  animal.mood = "nervous"}
+<<<<<<< HEAD
     cats.each {|animal|  animal.owner = nil}
     dogs.each {|animal|  animal.owner = nil}
+=======
+    cats.reset_all
+    dogs.clear
+>>>>>>> 20c4bcf5d73c79652074a0a0009bca50149ce183
   end
   
   def list_pets
